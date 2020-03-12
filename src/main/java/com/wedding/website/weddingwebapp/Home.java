@@ -1,23 +1,12 @@
 package com.wedding.website.weddingwebapp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Entity
-@Data
-@AllArgsConstructor
 public class Home {
 	
-	@Id
-	@GeneratedValue
-	private long id;
 	
-	@Column
+	
+//	private long id;
+	
+	
 	private String msg;
 
 	public String getMsg() {
