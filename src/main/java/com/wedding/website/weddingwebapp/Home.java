@@ -28,17 +28,6 @@ public class Home {
 		this.msg = msg;
 	}
 
-	public Home(long id, String msg) {
-		super();
-		this.id = id;
-		this.msg = msg;
-	}
-
-	public Home() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
 	
 	
 }
