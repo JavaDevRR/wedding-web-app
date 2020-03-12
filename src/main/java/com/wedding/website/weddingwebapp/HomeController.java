@@ -37,10 +37,9 @@ public class HomeController {
 	}
 
 
-	public HomeController(HomeService homeService) {
-		super();
-		this.homeService = homeService;
-	}
-
+	/*
+	 * public HomeController(HomeService homeService) { super(); this.homeService =
+	 * homeService; }
+	 */
 
 }
