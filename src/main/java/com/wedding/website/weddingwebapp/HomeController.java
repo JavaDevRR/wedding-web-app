@@ -15,13 +15,11 @@ public class HomeController {
 	@Autowired
 	HomeService homeService;
 	
-	@GetMapping(path="/home")
-	public Iterable<Home> getHomePage() {
-		Home h1 = new Home();
-		h1.setMsg("test");
-		System.out.println(homeService.list().toString());
-		return homeService.list();
-	}
+	/*
+	 * @GetMapping(path="/home") public Iterable<Home> getHomePage() { Home h1 = new
+	 * Home(); h1.setMsg("test"); System.out.println(homeService.list().toString());
+	 * return homeService.list(); }
+	 */
 	
 	
 	@GetMapping(path="/save")
