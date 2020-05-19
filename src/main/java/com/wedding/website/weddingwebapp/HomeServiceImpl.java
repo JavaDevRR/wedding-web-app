@@ -9,14 +9,7 @@ import org.springframework.stereotype.Service;
 public class HomeServiceImpl implements HomeService {
 	
 
-	@Autowired
-	HomeRepository homeRepository;
 	
-	@Override
-	public Iterable<Home> list(){
-		System.out.println(this.homeRepository.findAll());
-		return this.homeRepository.findAll();
-	}
 	
 	public void save() {
 		
@@ -30,14 +23,17 @@ public class HomeServiceImpl implements HomeService {
 		h2.setMsg("HELP");
 		homelist.add(h2);
 		
-		this.homeRepository.saveAll(homelist);
+		
 		
 	}
 
-	public HomeServiceImpl(HomeRepository homeRepository) {
-		super();
-		this.homeRepository = homeRepository;
+	@Override
+	public Iterable<Home> list() {
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+	
 
 	
 	
